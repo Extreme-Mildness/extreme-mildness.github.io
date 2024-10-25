@@ -36,7 +36,7 @@
 <div class=flex-child style="flex:0 1 600px">
 <p>Howdy!</p>
 <p>I am a PhD candidate at the Department of Economics of UT Austin.</p>
-<p>I use methods from <strong>Empirical Industrial Organization</strong> to study the design of <strong>online platforms</strong>, particularly in the <strong>transportation</strong> sector. I also apply <strong>reinforcement learning</strong> tools to the study of optimal firm policies and counterfactual analysis.</p>
+<p>I use methods from <strong>Empirical IO</strong> to study <strong>market design</strong> questions in the context of <strong>online platforms</strong>, particularly in the <strong>transportation</strong> sector.</p>
 <p><strong>I am on the 2024-2025 academic job market.</strong></p>
 <p><a href=/files/cv/rfaltings_cv.pdf><strong>Curriculum Vitae</strong></a></p>
 <script src=https://rfaltings.com/js/scramble.js></script>
@@ -55,34 +55,40 @@ Pricing the Right to Renege in Search Markets: Evidence from Trucking
 <p><script src=https://rfaltings.com/js/accordion.js></script>
 <a href=javascript:void(0); class=show-abstract onclick="toggleAccordion('abstract_jmp')">Abstract</a> | <a href=/papers/rfaltings_jmp.pdf>Draft</a>
 <div id=abstract_jmp class=panel>
-In many markets, advance contracts allow one party to renege against a penalty, granting them the option to keep searching for alternatives and reducing their opportunity cost of contracting early. This paper studies the optimal design and welfare implications of such arrangements in the trucking industry, leveraging novel data from a brokerage firm. Through a digital auction platform, the firm lets freight carriers bid their asking price on shipments directly and penalizes cancellations lightly through a reputational mechanism. To evaluate alternative penalty designs, this paper develops and estimates a dynamic structural model of the carriers' job-finding problem, linking their search and bidding behavior to the firm's cancellation policy. Counterfactual simulations of the model suggest that increasing the cancellation penalty reduces both firm profits and overall welfare, as the burden of reduced flexibility is shifted to the brokerage through increased bids and fewer total matches. The paper also explores a switch to pecuniary penalties—common in the travel industry—which provide the brokerage with an additional revenue stream. Results show that while these can boost firm profits, they do so at the cost of lower overall welfare.
+In many markets, advance interim contracts include an explicit right to renege, granting one party the option to switch to more efficient matches that emerge later in the search process. This paper studies the formation and welfare implications of such interim contracts, leveraging novel data from a brokerage firm in the trucking industry. The broker allocates advance contracts on shipments to carriers through a dynamic auction mechanism and penalizes cancellations through a reputational mechanism. I develop a theoretical model linking the carrier’s bidding problem to the firm’s cancellation penalties through a dynamic job-search problem and structurally estimate the model from rich data on bids and cancellations. In counterfactual simulations, I show that the firm is incentivized to lower cancellation penalties as the option value of the right to renege is priced into carrier bids. The results rationalize the large degree of contractual flexibility observed in the trucking industry as an efficient market outcome rather than one constrained by limited contractual enforcement.
 </div>
 </p>
 <div class=papertitle>
-Squeezing More Juice Out of Lime: A Novel High-dimensional Pricing Algorithm
+Oligopolistic Price Competition in Space and Time: Framework and Distributional Effects
 </div>
 <p><script src=https://rfaltings.com/js/accordion.js></script>
 <a href=javascript:void(0); class=show-abstract onclick="toggleAccordion('abstract_lime')">Abstract</a> | <a href=/papers/rfaltings_rl_pricing.pdf>Draft</a> | <a href="https://colab.research.google.com/drive/1cMJtJbQ1jfibjtclYfh32V4R7poTqqzp?usp=sharing">Google Colab Example</a>
 <div id=abstract_lime class=panel>
-Sophisticated pricing algorithms used by digital transportation platforms have renewed interest in price control policies, but little evidence exists on their redistributive effects. This paper studies a uniform price mandate in the market for shared electric vehicle platforms in Washington, D.C., which prohibits origin- and destination-based pricing. To compute price equilibria encompassing hundreds of prices for specific origin-destination pairs, I develop a new simulation-based pricing algorithm, adapted from the reinforcement learning literature. I apply the algorithm to a demand system estimated using geolocation data from all firms in the market. In the counterfactual exercise, I find that the redistributive effects of the price controls are mild, and mainly serve riders in the periphery of the city. Furthermore, I find that relaxing the price controls increases rides taken by consumers by 41%, firm profits by 34%, and increases consumer welfare by more than double the profit increase (80% of firm profits).
+I study oligopolistic dynamic price competition between micromobility platforms in Washington, D.C. The model presents a computational challenge due to both the large policy space—optimizing prices across hundreds of origin-destination pairs for eight competing firms—and the large state space of vehicle inventories across different locations. I overcome these computational challenges by performing gradient descent in a simulated dynamic model of the market, an approach proven to be successful in high-dimensional settings by the deep reinforcement learning literature. Using this framework, I compare the current regulation-constrained regime of spatially uniform price competition with counterfactual scenarios with competition on fully flexible prices for each origin-destination pair and time of day, focusing on the distributional impacts of flexible pricing. Matching the heterogenous welfare impacts to trip survey data, I find that welfare gains and losses are evenly distributed across travelers of different incomes, allaying policymakers’ concerns of equitable access to transportation under destination pricing.
 </div>
 </p>
 <h3 id=work-in-progress>Work in progress</h3>
 <hr>
 <div class=papertitle>
-From Favorites to Fresh Faces: Viewer Loyalty and New Creators in Livestreaming
+Equilibrium in Decentralized Freight Networks
+</div>
+<p>(with <a href=https://nbuchholz.scholar.princeton.edu/>Nick Buchholz</a> and <a href=http://www.johnlazarev.com/>John Lazarev</a>)</p>
+<p><script src=https://rfaltings.com/js/accordion.js></script>
+<a href=javascript:void(0); class=show-abstract onclick="toggleAccordion('abstract_twitch')">Abstract</a>
+<div id=abstract_twitch class=panel>
+We study equilibrium market structure and pricing across the nationwide freight trucking network, a trillion-dollar market responsible for moving 72% of the nation's goods. Using detailed auction data from the U.S. freight spot market, we document a three-fold per-mile price dispersion across 171 U.S. cities, evidence of significant geographic labor supply preferences, and imbalanced trade flows between regions. To understand these patterns, we pose a micro-founded model of carrier bidding behavior across local markets. Local market outcomes are linked to each other in a spatial equilibrium, as the movement of trucks in the network influences the value of bidding on different shipment destinations. The auction-based setting allows us to obtain rich estimates of carrier cost heterogeneity, search frictions and home-region preferences. Despite the large and competitive national pool of carriers and drivers, markets with a thinner flow of trucks in equilibrium give rise to localized market power. We use our estimates to quantify how these factors contribute to the observed spatial price dispersion and capacity patterns over the network.
+</div>
+</p>
+<div class=papertitle>
+Preference Inertia and Superstar Effects: Evidence from Live-streaming
 </div>
 <p>(with Alexander Tang)</p>
 <p><script src=https://rfaltings.com/js/accordion.js></script>
 <a href=javascript:void(0); class=show-abstract onclick="toggleAccordion('abstract_twitch')">Abstract</a>
 <div id=abstract_twitch class=panel>
-As the gig economy grows, an increasing number of individuals are relying on content creation for their livelihood. The design of platform recommendation algorithms plays a critical role in the discovery and success of new creators. This study presents novel evidence from a natural experiment on the Twitch livestreaming platform to quantify this entry barrier. We analyze eight weeks of high-frequency viewership panel data for all World of Warcraft streams, focusing on the period surrounding the launch of a new game expansion that substantially increased both viewership and the number of streamers. Our findings highlight the significant role of viewer favorites, with the median viewer dedicating 60% of their time to a single streamer pre-launch and 48% post-launch. We also observe considerable stickiness in these preferences; fresh viewers in the post-launch period are twice as likely to watch fresh streamers compared to those active pre-launch. These patterns have important implications for the entry of new streamers and inform the design of recommendation algorithms. Future work aims to develop a theoretical model to understand the impact of these dynamics on the equilibrium distribution of viewership across streamers.
+Superstar effects have been linked to rising income inequality since Rosen (1981). Theoretical models assume that superstar effects are driven by natural market forces allowing high-quality individuals to command disproportionately large market shares—especially in industries with near-zero marginal costs of production, such as entertainment. However, choice inertia induced by search frictions can further amplify the success of superstars through an incumbency advantage. We provide novel evidence quantifying the impact of choice inertia on superstar popularity within the live-streaming market. We analyze panel data on viewership for a game category before and after a significant demand shock, which spurred entry of new streamers. Our findings reveal that while incumbent streamers are more popular overall, new viewers are twice as likely (32.81\%) as incumbents (14.63\%) to watch an entrant streamer, highlighting a substantial role for choice inertia. These insights can guide the design of content recommendation algorithms to support new creators and mitigate superstar effects caused by choice inertia.
 </div>
 </p>
-<div class=papertitle>
-Equilibria in Decentralized Freight Networks
-</div>
-<p>(with <a href=https://nbuchholz.scholar.princeton.edu/>Nick Buchholz</a> and <a href=http://www.johnlazarev.com/>John Lazarev</a>)</p>
 <h3 id=publications>Publications</h3>
 <hr>
 <div class=papertitle>
